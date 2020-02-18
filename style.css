@@ -1,0 +1,58 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  
+  .custom-buttons {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .custom-button {
+    position: relative;
+    transition: .4s;
+    cursor: pointer;
+    
+    &:hover {
+      transform: scale(1.2);
+      transition: .4s;
+    }
+  }
+  
+  .custom-button__icon{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items:center;
+    justify-content: center;
+    font-size: 50px;
+    color: #ffffff;
+  }
+  
+  .video-container { 
+     position: relative; 
+     padding-bottom: 56.25%;  
+     padding-top: 60px; overflow: hidden;
+     margin-bottom: -1px;
+     margin-right: -1px;   
+  }
+  
+   .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;  
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+  }
+  
+  .d-none {
+    display: none;
+  }
+}
